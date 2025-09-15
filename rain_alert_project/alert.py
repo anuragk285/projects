@@ -14,8 +14,8 @@ from_number = "paste your twilio account generated number"
 to_number = "paste your personal mobile number (Ex: '+91123456789')"
 parameters = {
     # put you place co-ordinates
-    "lat" :17.385044, # lattitude 
-    "lon" :78.486671, # longitude
+    "lat" : 100, # lattitude 
+    "lon" : 100, # longitude
     "appid": api_key,
 }
 response = requests.get(url=OWM_endpoind, params=parameters)
