@@ -2,13 +2,13 @@ import requests
 from twilio.rest import Client
 import os
 
-# paste your open weather map api key, here i just hided my api and auth token details environmental variables
+# paste your (open weather map) api_key, auth_token, account_sid, here i just hided my details using environmental variables
 auth_token = os.environ.get("AUTH_TOKEN")
 api_key = os.environ.get("OWM_API_KEY")
+account_sid = os.environ.get("ACCOUNT_SID")
 
 OWM_endpoind = "https://api.openweathermap.org/data/2.5/forecast"
 # paste you open weather map account sid
-account_sid = "AC60ef5be39daaa29cf7f944466dff2011"
 
 from_number = "paste your twilio account generated number"
 to_number = "paste your personal mobile number (Ex: '+91123456789')"
